@@ -1,0 +1,6 @@
+[submodule "Knob/External/BPODial"]
+	path = Knob/External/BPODial
+	url = git@github.com:BYTEPOETS/BPODial.git
+[submodule "Knob/External/KGNoise"]
+	path = Knob/External/KGNoise
+	url = git@github.com:kgn/KGNoise.git

@@ -1,0 +1,726 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F21EA51184A1AE7005B6EE7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F21EA50184A1AE7005B6EE7 /* Cocoa.framework */; };
+		5F21EA5B184A1AE7005B6EE7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F21EA59184A1AE7005B6EE7 /* InfoPlist.strings */; };
+		5F21EA5D184A1AE7005B6EE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F21EA5C184A1AE7005B6EE7 /* main.m */; };
+		5F21EA61184A1AE7005B6EE7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5F21EA5F184A1AE7005B6EE7 /* Credits.rtf */; };
+		5F21EA64184A1AE7005B6EE7 /* MPAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5F21EA63184A1AE7005B6EE7 /* MPAppDelegate.mm */; };
+		5F21EA67184A1AE8005B6EE7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F21EA65184A1AE8005B6EE7 /* MainMenu.xib */; };
+		5F21EA69184A1AE8005B6EE7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F21EA68184A1AE8005B6EE7 /* Images.xcassets */; };
+		5F21EA70184A1AE8005B6EE7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F21EA6F184A1AE8005B6EE7 /* XCTest.framework */; };
+		5F21EA71184A1AE8005B6EE7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F21EA50184A1AE7005B6EE7 /* Cocoa.framework */; };
+		5F21EA79184A1AE8005B6EE7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F21EA77184A1AE8005B6EE7 /* InfoPlist.strings */; };
+		5F21EA7B184A1AE8005B6EE7 /* KnobTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F21EA7A184A1AE8005B6EE7 /* KnobTests.m */; };
+		5F21EA92184A1FE5005B6EE7 /* leapmidi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F21EA8D184A1FCB005B6EE7 /* leapmidi.a */; };
+		5F21EA95184A204F005B6EE7 /* LMXListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F21EA93184A204F005B6EE7 /* LMXListener.cpp */; };
+		5F21EA9F184A20E8005B6EE7 /* BPODial.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F21EA98184A20E8005B6EE7 /* BPODial.m */; };
+		5F21EAA0184A20E8005B6EE7 /* BPOSliderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F21EA9A184A20E8005B6EE7 /* BPOSliderCell.m */; };
+		5F21EAA1184A20E8005B6EE7 /* NSAffineTransform+Rotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F21EA9C184A20E8005B6EE7 /* NSAffineTransform+Rotation.m */; };
+		5F21EAA2184A20E8005B6EE7 /* VectorMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F21EA9E184A20E8005B6EE7 /* VectorMath.m */; };
+		5F21EAB2184A22D4005B6EE7 /* BallControlProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F21EAAA184A22D3005B6EE7 /* BallControlProgram.cpp */; };
+		5F21EAB3184A22D4005B6EE7 /* FingerControlProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F21EAAC184A22D4005B6EE7 /* FingerControlProgram.cpp */; };
+		5F21EAB4184A22D4005B6EE7 /* FingerNoteProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F21EAAE184A22D4005B6EE7 /* FingerNoteProgram.cpp */; };
+		5F21EAB5184A22D4005B6EE7 /* MIDIProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F21EAB0184A22D4005B6EE7 /* MIDIProgram.cpp */; };
+		5F21EAB9184A231D005B6EE7 /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F21EAB8184A231D005B6EE7 /* libLeap.dylib */; };
+		5F21EABC184A2333005B6EE7 /* Device.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F21EABA184A2333005B6EE7 /* Device.cpp */; };
+		5F21EABE184A2361005B6EE7 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F21EABD184A2361005B6EE7 /* CoreMIDI.framework */; };
+		5F21EAC1184A279F005B6EE7 /* MPKnobWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F21EAC0184A279F005B6EE7 /* MPKnobWindow.m */; };
+		5F21EAC4184A2924005B6EE7 /* KGNoise.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F21EAC3184A2924005B6EE7 /* KGNoise.m */; };
+		5F21EAC7184A2A87005B6EE7 /* libLeap.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5F21EAB8184A231D005B6EE7 /* libLeap.dylib */; };
+		5F21EACA184A2BF7005B6EE7 /* MPKnobWindowBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F21EAC9184A2BF7005B6EE7 /* MPKnobWindowBackgroundView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F21EA72184A1AE8005B6EE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F21EA45184A1AE7005B6EE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F21EA4C184A1AE7005B6EE7;
+			remoteInfo = Knob;
+		};
+		5F21EA8C184A1FCB005B6EE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F21EA87184A1FCB005B6EE7 /* leapmidi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C33EF2AF16672833001D3D0E;
+			remoteInfo = leapmidi;
+		};
+		5F21EA8E184A1FCB005B6EE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F21EA87184A1FCB005B6EE7 /* leapmidi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C33EF32216673D10001D3D0E;
+			remoteInfo = leapmidi_test;
+		};
+		5F21EA90184A1FDF005B6EE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F21EA87184A1FCB005B6EE7 /* leapmidi.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C33EF2AE16672833001D3D0E;
+			remoteInfo = leapmidi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5F21EAC6184A2A6B005B6EE7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				5F21EAC7184A2A87005B6EE7 /* libLeap.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5F21EA4D184A1AE7005B6EE7 /* Knob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Knob.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F21EA50184A1AE7005B6EE7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5F21EA53184A1AE7005B6EE7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		5F21EA54184A1AE7005B6EE7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5F21EA55184A1AE7005B6EE7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5F21EA58184A1AE7005B6EE7 /* Knob-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Knob-Info.plist"; sourceTree = "<group>"; };
+		5F21EA5A184A1AE7005B6EE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5F21EA5C184A1AE7005B6EE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5F21EA5E184A1AE7005B6EE7 /* Knob-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Knob-Prefix.pch"; sourceTree = "<group>"; };
+		5F21EA60184A1AE7005B6EE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		5F21EA62184A1AE7005B6EE7 /* MPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPAppDelegate.h; sourceTree = "<group>"; };
+		5F21EA63184A1AE7005B6EE7 /* MPAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MPAppDelegate.mm; sourceTree = "<group>"; };
+		5F21EA66184A1AE8005B6EE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		5F21EA68184A1AE8005B6EE7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5F21EA6E184A1AE8005B6EE7 /* KnobTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnobTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F21EA6F184A1AE8005B6EE7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5F21EA76184A1AE8005B6EE7 /* KnobTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KnobTests-Info.plist"; sourceTree = "<group>"; };
+		5F21EA78184A1AE8005B6EE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5F21EA7A184A1AE8005B6EE7 /* KnobTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KnobTests.m; sourceTree = "<group>"; };
+		5F21EA87184A1FCB005B6EE7 /* leapmidi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = leapmidi.xcodeproj; path = ../../leapmidi/leapmidi.xcodeproj; sourceTree = "<group>"; };
+		5F21EA93184A204F005B6EE7 /* LMXListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LMXListener.cpp; path = ../LeapMIDIX/LMXListener.cpp; sourceTree = "<group>"; };
+		5F21EA94184A204F005B6EE7 /* LMXListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LMXListener.h; path = ../LeapMIDIX/LMXListener.h; sourceTree = "<group>"; };
+		5F21EA97184A20E8005B6EE7 /* BPODial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BPODial.h; path = External/BPODial/BPODial/BPODial/BPODial.h; sourceTree = "<group>"; };
+		5F21EA98184A20E8005B6EE7 /* BPODial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BPODial.m; path = External/BPODial/BPODial/BPODial/BPODial.m; sourceTree = "<group>"; };
+		5F21EA99184A20E8005B6EE7 /* BPOSliderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BPOSliderCell.h; path = External/BPODial/BPODial/BPODial/BPOSliderCell.h; sourceTree = "<group>"; };
+		5F21EA9A184A20E8005B6EE7 /* BPOSliderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BPOSliderCell.m; path = External/BPODial/BPODial/BPODial/BPOSliderCell.m; sourceTree = "<group>"; };
+		5F21EA9B184A20E8005B6EE7 /* NSAffineTransform+Rotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSAffineTransform+Rotation.h"; path = "External/BPODial/BPODial/BPODial/NSAffineTransform+Rotation.h"; sourceTree = "<group>"; };
+		5F21EA9C184A20E8005B6EE7 /* NSAffineTransform+Rotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSAffineTransform+Rotation.m"; path = "External/BPODial/BPODial/BPODial/NSAffineTransform+Rotation.m"; sourceTree = "<group>"; };
+		5F21EA9D184A20E8005B6EE7 /* VectorMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VectorMath.h; path = External/BPODial/BPODial/BPODial/VectorMath.h; sourceTree = "<group>"; };
+		5F21EA9E184A20E8005B6EE7 /* VectorMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VectorMath.m; path = External/BPODial/BPODial/BPODial/VectorMath.m; sourceTree = "<group>"; };
+		5F21EAA5184A211C005B6EE7 /* Leap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Leap.h; path = ../../../LeapDeveloperKit/LeapSDK/include/Leap.h; sourceTree = "<group>"; };
+		5F21EAA6184A211C005B6EE7 /* LeapMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeapMath.h; path = ../../../LeapDeveloperKit/LeapSDK/include/LeapMath.h; sourceTree = "<group>"; };
+		5F21EAAA184A22D3005B6EE7 /* BallControlProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BallControlProgram.cpp; path = ../LeapMIDIX/program/BallControlProgram.cpp; sourceTree = "<group>"; };
+		5F21EAAB184A22D3005B6EE7 /* BallControlProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BallControlProgram.h; path = ../LeapMIDIX/program/BallControlProgram.h; sourceTree = "<group>"; };
+		5F21EAAC184A22D4005B6EE7 /* FingerControlProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FingerControlProgram.cpp; path = ../LeapMIDIX/program/FingerControlProgram.cpp; sourceTree = "<group>"; };
+		5F21EAAD184A22D4005B6EE7 /* FingerControlProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FingerControlProgram.h; path = ../LeapMIDIX/program/FingerControlProgram.h; sourceTree = "<group>"; };
+		5F21EAAE184A22D4005B6EE7 /* FingerNoteProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FingerNoteProgram.cpp; path = ../LeapMIDIX/program/FingerNoteProgram.cpp; sourceTree = "<group>"; };
+		5F21EAAF184A22D4005B6EE7 /* FingerNoteProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FingerNoteProgram.h; path = ../LeapMIDIX/program/FingerNoteProgram.h; sourceTree = "<group>"; };
+		5F21EAB0184A22D4005B6EE7 /* MIDIProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MIDIProgram.cpp; path = ../LeapMIDIX/program/MIDIProgram.cpp; sourceTree = "<group>"; };
+		5F21EAB1184A22D4005B6EE7 /* MIDIProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MIDIProgram.h; path = ../LeapMIDIX/program/MIDIProgram.h; sourceTree = "<group>"; };
+		5F21EAB8184A231D005B6EE7 /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libLeap.dylib; path = "../../../LeapDeveloperKit/LeapSDK/lib/libc++/libLeap.dylib"; sourceTree = "<group>"; };
+		5F21EABA184A2333005B6EE7 /* Device.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Device.cpp; path = ../LeapMIDIX/Device.cpp; sourceTree = "<group>"; };
+		5F21EABB184A2333005B6EE7 /* Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Device.h; path = ../LeapMIDIX/Device.h; sourceTree = "<group>"; };
+		5F21EABD184A2361005B6EE7 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		5F21EABF184A279F005B6EE7 /* MPKnobWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPKnobWindow.h; sourceTree = "<group>"; };
+		5F21EAC0184A279F005B6EE7 /* MPKnobWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPKnobWindow.m; sourceTree = "<group>"; };
+		5F21EAC2184A2924005B6EE7 /* KGNoise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KGNoise.h; path = External/KGNoise/KGNoise.h; sourceTree = "<group>"; };
+		5F21EAC3184A2924005B6EE7 /* KGNoise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGNoise.m; path = External/KGNoise/KGNoise.m; sourceTree = "<group>"; };
+		5F21EAC8184A2BF7005B6EE7 /* MPKnobWindowBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPKnobWindowBackgroundView.h; sourceTree = "<group>"; };
+		5F21EAC9184A2BF7005B6EE7 /* MPKnobWindowBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPKnobWindowBackgroundView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F21EA4A184A1AE7005B6EE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F21EAB9184A231D005B6EE7 /* libLeap.dylib in Frameworks */,
+				5F21EA92184A1FE5005B6EE7 /* leapmidi.a in Frameworks */,
+				5F21EABE184A2361005B6EE7 /* CoreMIDI.framework in Frameworks */,
+				5F21EA51184A1AE7005B6EE7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F21EA6B184A1AE8005B6EE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F21EA71184A1AE8005B6EE7 /* Cocoa.framework in Frameworks */,
+				5F21EA70184A1AE8005B6EE7 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F21EA44184A1AE7005B6EE7 = {
+			isa = PBXGroup;
+			children = (
+				5F21EA96184A2053005B6EE7 /* External */,
+				5F21EA56184A1AE7005B6EE7 /* Knob */,
+				5F21EA74184A1AE8005B6EE7 /* KnobTests */,
+				5F21EA4F184A1AE7005B6EE7 /* Frameworks */,
+				5F21EA4E184A1AE7005B6EE7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F21EA4E184A1AE7005B6EE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F21EA4D184A1AE7005B6EE7 /* Knob.app */,
+				5F21EA6E184A1AE8005B6EE7 /* KnobTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F21EA4F184A1AE7005B6EE7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F21EABD184A2361005B6EE7 /* CoreMIDI.framework */,
+				5F21EA87184A1FCB005B6EE7 /* leapmidi.xcodeproj */,
+				5F21EA50184A1AE7005B6EE7 /* Cocoa.framework */,
+				5F21EA6F184A1AE8005B6EE7 /* XCTest.framework */,
+				5F21EA52184A1AE7005B6EE7 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F21EA52184A1AE7005B6EE7 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F21EA53184A1AE7005B6EE7 /* AppKit.framework */,
+				5F21EA54184A1AE7005B6EE7 /* CoreData.framework */,
+				5F21EA55184A1AE7005B6EE7 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		5F21EA56184A1AE7005B6EE7 /* Knob */ = {
+			isa = PBXGroup;
+			children = (
+				5F21EA62184A1AE7005B6EE7 /* MPAppDelegate.h */,
+				5F21EA63184A1AE7005B6EE7 /* MPAppDelegate.mm */,
+				5F21EABF184A279F005B6EE7 /* MPKnobWindow.h */,
+				5F21EAC0184A279F005B6EE7 /* MPKnobWindow.m */,
+				5F21EAC8184A2BF7005B6EE7 /* MPKnobWindowBackgroundView.h */,
+				5F21EAC9184A2BF7005B6EE7 /* MPKnobWindowBackgroundView.m */,
+				5F21EA65184A1AE8005B6EE7 /* MainMenu.xib */,
+				5F21EA68184A1AE8005B6EE7 /* Images.xcassets */,
+				5F21EA57184A1AE7005B6EE7 /* Supporting Files */,
+			);
+			path = Knob;
+			sourceTree = "<group>";
+		};
+		5F21EA57184A1AE7005B6EE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F21EA58184A1AE7005B6EE7 /* Knob-Info.plist */,
+				5F21EA59184A1AE7005B6EE7 /* InfoPlist.strings */,
+				5F21EA5C184A1AE7005B6EE7 /* main.m */,
+				5F21EA5E184A1AE7005B6EE7 /* Knob-Prefix.pch */,
+				5F21EA5F184A1AE7005B6EE7 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5F21EA74184A1AE8005B6EE7 /* KnobTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F21EA7A184A1AE8005B6EE7 /* KnobTests.m */,
+				5F21EA75184A1AE8005B6EE7 /* Supporting Files */,
+			);
+			path = KnobTests;
+			sourceTree = "<group>";
+		};
+		5F21EA75184A1AE8005B6EE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F21EA76184A1AE8005B6EE7 /* KnobTests-Info.plist */,
+				5F21EA77184A1AE8005B6EE7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5F21EA88184A1FCB005B6EE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F21EA8D184A1FCB005B6EE7 /* leapmidi.a */,
+				5F21EA8F184A1FCB005B6EE7 /* leapmidi_test */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F21EA96184A2053005B6EE7 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				5F21EAC5184A2926005B6EE7 /* KGNoise */,
+				5F21EAA7184A211E005B6EE7 /* Leap SDK */,
+				5F21EAA4184A20F2005B6EE7 /* BPODial */,
+				5F21EAA3184A20EA005B6EE7 /* LeapMIDIX */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		5F21EAA3184A20EA005B6EE7 /* LeapMIDIX */ = {
+			isa = PBXGroup;
+			children = (
+				5F21EAB7184A22F9005B6EE7 /* visualizer */,
+				5F21EAB6184A22DA005B6EE7 /* program */,
+				5F21EA93184A204F005B6EE7 /* LMXListener.cpp */,
+				5F21EA94184A204F005B6EE7 /* LMXListener.h */,
+				5F21EABA184A2333005B6EE7 /* Device.cpp */,
+				5F21EABB184A2333005B6EE7 /* Device.h */,
+			);
+			name = LeapMIDIX;
+			sourceTree = "<group>";
+		};
+		5F21EAA4184A20F2005B6EE7 /* BPODial */ = {
+			isa = PBXGroup;
+			children = (
+				5F21EA97184A20E8005B6EE7 /* BPODial.h */,
+				5F21EA98184A20E8005B6EE7 /* BPODial.m */,
+				5F21EA99184A20E8005B6EE7 /* BPOSliderCell.h */,
+				5F21EA9A184A20E8005B6EE7 /* BPOSliderCell.m */,
+				5F21EA9B184A20E8005B6EE7 /* NSAffineTransform+Rotation.h */,
+				5F21EA9C184A20E8005B6EE7 /* NSAffineTransform+Rotation.m */,
+				5F21EA9D184A20E8005B6EE7 /* VectorMath.h */,
+				5F21EA9E184A20E8005B6EE7 /* VectorMath.m */,
+			);
+			name = BPODial;
+			sourceTree = "<group>";
+		};
+		5F21EAA7184A211E005B6EE7 /* Leap SDK */ = {
+			isa = PBXGroup;
+			children = (
+				5F21EAB8184A231D005B6EE7 /* libLeap.dylib */,
+				5F21EAA5184A211C005B6EE7 /* Leap.h */,
+				5F21EAA6184A211C005B6EE7 /* LeapMath.h */,
+			);
+			name = "Leap SDK";
+			sourceTree = "<group>";
+		};
+		5F21EAB6184A22DA005B6EE7 /* program */ = {
+			isa = PBXGroup;
+			children = (
+				5F21EAAA184A22D3005B6EE7 /* BallControlProgram.cpp */,
+				5F21EAAB184A22D3005B6EE7 /* BallControlProgram.h */,
+				5F21EAAC184A22D4005B6EE7 /* FingerControlProgram.cpp */,
+				5F21EAAD184A22D4005B6EE7 /* FingerControlProgram.h */,
+				5F21EAAE184A22D4005B6EE7 /* FingerNoteProgram.cpp */,
+				5F21EAAF184A22D4005B6EE7 /* FingerNoteProgram.h */,
+				5F21EAB0184A22D4005B6EE7 /* MIDIProgram.cpp */,
+				5F21EAB1184A22D4005B6EE7 /* MIDIProgram.h */,
+			);
+			name = program;
+			sourceTree = "<group>";
+		};
+		5F21EAB7184A22F9005B6EE7 /* visualizer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = visualizer;
+			sourceTree = "<group>";
+		};
+		5F21EAC5184A2926005B6EE7 /* KGNoise */ = {
+			isa = PBXGroup;
+			children = (
+				5F21EAC2184A2924005B6EE7 /* KGNoise.h */,
+				5F21EAC3184A2924005B6EE7 /* KGNoise.m */,
+			);
+			name = KGNoise;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F21EA4C184A1AE7005B6EE7 /* Knob */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F21EA7E184A1AE8005B6EE7 /* Build configuration list for PBXNativeTarget "Knob" */;
+			buildPhases = (
+				5F21EA49184A1AE7005B6EE7 /* Sources */,
+				5F21EA4A184A1AE7005B6EE7 /* Frameworks */,
+				5F21EA4B184A1AE7005B6EE7 /* Resources */,
+				5F21EAC6184A2A6B005B6EE7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F21EA91184A1FDF005B6EE7 /* PBXTargetDependency */,
+			);
+			name = Knob;
+			productName = Knob;
+			productReference = 5F21EA4D184A1AE7005B6EE7 /* Knob.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F21EA6D184A1AE8005B6EE7 /* KnobTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F21EA81184A1AE8005B6EE7 /* Build configuration list for PBXNativeTarget "KnobTests" */;
+			buildPhases = (
+				5F21EA6A184A1AE8005B6EE7 /* Sources */,
+				5F21EA6B184A1AE8005B6EE7 /* Frameworks */,
+				5F21EA6C184A1AE8005B6EE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F21EA73184A1AE8005B6EE7 /* PBXTargetDependency */,
+			);
+			name = KnobTests;
+			productName = KnobTests;
+			productReference = 5F21EA6E184A1AE8005B6EE7 /* KnobTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F21EA45184A1AE7005B6EE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MP;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Still Ltd";
+				TargetAttributes = {
+					5F21EA6D184A1AE8005B6EE7 = {
+						TestTargetID = 5F21EA4C184A1AE7005B6EE7;
+					};
+				};
+			};
+			buildConfigurationList = 5F21EA48184A1AE7005B6EE7 /* Build configuration list for PBXProject "Knob" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F21EA44184A1AE7005B6EE7;
+			productRefGroup = 5F21EA4E184A1AE7005B6EE7 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5F21EA88184A1FCB005B6EE7 /* Products */;
+					ProjectRef = 5F21EA87184A1FCB005B6EE7 /* leapmidi.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				5F21EA4C184A1AE7005B6EE7 /* Knob */,
+				5F21EA6D184A1AE8005B6EE7 /* KnobTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5F21EA8D184A1FCB005B6EE7 /* leapmidi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = leapmidi.a;
+			remoteRef = 5F21EA8C184A1FCB005B6EE7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5F21EA8F184A1FCB005B6EE7 /* leapmidi_test */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = leapmidi_test;
+			remoteRef = 5F21EA8E184A1FCB005B6EE7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F21EA4B184A1AE7005B6EE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F21EA5B184A1AE7005B6EE7 /* InfoPlist.strings in Resources */,
+				5F21EA69184A1AE8005B6EE7 /* Images.xcassets in Resources */,
+				5F21EA61184A1AE7005B6EE7 /* Credits.rtf in Resources */,
+				5F21EA67184A1AE8005B6EE7 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F21EA6C184A1AE8005B6EE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F21EA79184A1AE8005B6EE7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F21EA49184A1AE7005B6EE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F21EAA1184A20E8005B6EE7 /* NSAffineTransform+Rotation.m in Sources */,
+				5F21EAB4184A22D4005B6EE7 /* FingerNoteProgram.cpp in Sources */,
+				5F21EA95184A204F005B6EE7 /* LMXListener.cpp in Sources */,
+				5F21EA5D184A1AE7005B6EE7 /* main.m in Sources */,
+				5F21EAC4184A2924005B6EE7 /* KGNoise.m in Sources */,
+				5F21EAB5184A22D4005B6EE7 /* MIDIProgram.cpp in Sources */,
+				5F21EAC1184A279F005B6EE7 /* MPKnobWindow.m in Sources */,
+				5F21EACA184A2BF7005B6EE7 /* MPKnobWindowBackgroundView.m in Sources */,
+				5F21EAB2184A22D4005B6EE7 /* BallControlProgram.cpp in Sources */,
+				5F21EAA0184A20E8005B6EE7 /* BPOSliderCell.m in Sources */,
+				5F21EABC184A2333005B6EE7 /* Device.cpp in Sources */,
+				5F21EA64184A1AE7005B6EE7 /* MPAppDelegate.mm in Sources */,
+				5F21EA9F184A20E8005B6EE7 /* BPODial.m in Sources */,
+				5F21EAB3184A22D4005B6EE7 /* FingerControlProgram.cpp in Sources */,
+				5F21EAA2184A20E8005B6EE7 /* VectorMath.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F21EA6A184A1AE8005B6EE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F21EA7B184A1AE8005B6EE7 /* KnobTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F21EA73184A1AE8005B6EE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F21EA4C184A1AE7005B6EE7 /* Knob */;
+			targetProxy = 5F21EA72184A1AE8005B6EE7 /* PBXContainerItemProxy */;
+		};
+		5F21EA91184A1FDF005B6EE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = leapmidi;
+			targetProxy = 5F21EA90184A1FDF005B6EE7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F21EA59184A1AE7005B6EE7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F21EA5A184A1AE7005B6EE7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5F21EA5F184A1AE7005B6EE7 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F21EA60184A1AE7005B6EE7 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		5F21EA65184A1AE8005B6EE7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F21EA66184A1AE8005B6EE7 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		5F21EA77184A1AE8005B6EE7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F21EA78184A1AE8005B6EE7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F21EA7C184A1AE8005B6EE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5F21EA7D184A1AE8005B6EE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5F21EA7F184A1AE8005B6EE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Knob/Knob-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/Users/mz2/Projects/leapmidi/leapmidi,
+					/Users/mz2/LeapDeveloperKit/LeapSDK/include,
+				);
+				INFOPLIST_FILE = "Knob/Knob-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/mz2/LeapDeveloperKit/LeapSDK/lib/libc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5F21EA80184A1AE8005B6EE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Knob/Knob-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/Users/mz2/Projects/leapmidi/leapmidi,
+					/Users/mz2/LeapDeveloperKit/LeapSDK/include,
+				);
+				INFOPLIST_FILE = "Knob/Knob-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/mz2/LeapDeveloperKit/LeapSDK/lib/libc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5F21EA82184A1AE8005B6EE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Knob.app/Contents/MacOS/Knob";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Knob/Knob-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KnobTests/KnobTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5F21EA83184A1AE8005B6EE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Knob.app/Contents/MacOS/Knob";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Knob/Knob-Prefix.pch";
+				INFOPLIST_FILE = "KnobTests/KnobTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F21EA48184A1AE7005B6EE7 /* Build configuration list for PBXProject "Knob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F21EA7C184A1AE8005B6EE7 /* Debug */,
+				5F21EA7D184A1AE8005B6EE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F21EA7E184A1AE8005B6EE7 /* Build configuration list for PBXNativeTarget "Knob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F21EA7F184A1AE8005B6EE7 /* Debug */,
+				5F21EA80184A1AE8005B6EE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F21EA81184A1AE8005B6EE7 /* Build configuration list for PBXNativeTarget "KnobTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F21EA82184A1AE8005B6EE7 /* Debug */,
+				5F21EA83184A1AE8005B6EE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F21EA45184A1AE7005B6EE7 /* Project object */;
+}

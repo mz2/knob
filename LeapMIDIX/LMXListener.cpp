@@ -29,7 +29,7 @@ void LMXListener::init(Leap::Controller *controller) {
 #ifdef LMX_VISUALIZER_ENABLED
     // initialize visualizer
     viz = new Visualizer();
-    viz->init(this);
+    viz->init(this, controller);
 #endif
     
     // PROGRAM SETUP
@@ -71,13 +71,10 @@ void LMXListener::onControlUpdated(const Leap::Controller &controller, GesturePt
     // control value
     leapmidi::midi_control_value val = control->mappedValue();
     
-    if (1) {
-        cout << "recognized control index " << controlIndex
+    cout << "recognized control index " << controlIndex
         << " (" << control->description() << ")"
         << ", raw value: "
         << control->rawValue() << " mapped value: " << val << endl;
-    }
-    
     
     bool multithreaded = true;
     

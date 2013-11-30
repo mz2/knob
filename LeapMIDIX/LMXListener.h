@@ -10,7 +10,6 @@
 #define __LeapMIDIX__Listener__
 
 #include <iostream>
-#include "Visualizer.h"
 #include "Device.h"
 #include "Leap.h"
 #include "LeapMIDI.h"
@@ -19,6 +18,11 @@
 #include "FingerNoteProgram.h"
 #include "BallControlProgram.h"
 #include "MIDINote.h"
+
+#ifdef LMX_VISUALIZER_ENABLED
+#include "Visualizer.h"
+#endif
+
 
 //#define LMX_VISUALIZER_ENABLED 1
 
