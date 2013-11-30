@@ -21,8 +21,11 @@
 #include <LeapMIDI.h>
 #include <Leap.h>
 
+#import "MPMIDIListener.h"
+#import "MPLeapController.h"
 
 @interface MPAppDelegate ()
+@property (strong, readwrite) MPMIDIListener *listener;
 @end
 
 @implementation MPAppDelegate
@@ -40,11 +43,7 @@
     [NSApp activateIgnoringOtherApps:YES];
     
     // start listening for events
-    leapmidi::LMXListener listener;
-    Leap::Controller controller;
-    
-    listener.init(&controller);
-    controller.addListener(listener);
+    self.listener = [[MPMIDIListener alloc] init];
 }
 
 - (void)initializeDial:(BPODial *)dial

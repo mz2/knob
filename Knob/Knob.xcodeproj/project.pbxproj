@@ -13,7 +13,6 @@
 		5F21EA61184A1AE7005B6EE7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5F21EA5F184A1AE7005B6EE7 /* Credits.rtf */; };
 		5F21EA64184A1AE7005B6EE7 /* MPAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5F21EA63184A1AE7005B6EE7 /* MPAppDelegate.mm */; };
 		5F21EA67184A1AE8005B6EE7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F21EA65184A1AE8005B6EE7 /* MainMenu.xib */; };
-		5F21EA69184A1AE8005B6EE7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F21EA68184A1AE8005B6EE7 /* Images.xcassets */; };
 		5F21EA70184A1AE8005B6EE7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F21EA6F184A1AE8005B6EE7 /* XCTest.framework */; };
 		5F21EA71184A1AE8005B6EE7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F21EA50184A1AE7005B6EE7 /* Cocoa.framework */; };
 		5F21EA79184A1AE8005B6EE7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F21EA77184A1AE8005B6EE7 /* InfoPlist.strings */; };
@@ -35,6 +34,9 @@
 		5F21EAC4184A2924005B6EE7 /* KGNoise.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F21EAC3184A2924005B6EE7 /* KGNoise.m */; };
 		5F21EAC7184A2A87005B6EE7 /* libLeap.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5F21EAB8184A231D005B6EE7 /* libLeap.dylib */; };
 		5F21EACA184A2BF7005B6EE7 /* MPKnobWindowBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F21EAC9184A2BF7005B6EE7 /* MPKnobWindowBackgroundView.m */; };
+		5F21EADC184A3813005B6EE7 /* knob-icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5F21EADB184A3813005B6EE7 /* knob-icon.icns */; };
+		5F21EADF184A3B68005B6EE7 /* MPMIDIListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5F21EADE184A3B68005B6EE7 /* MPMIDIListener.mm */; };
+		5F21EAE2184A3B9A005B6EE7 /* MPLeapController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5F21EAE1184A3B9A005B6EE7 /* MPLeapController.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,7 +97,6 @@
 		5F21EA62184A1AE7005B6EE7 /* MPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPAppDelegate.h; sourceTree = "<group>"; };
 		5F21EA63184A1AE7005B6EE7 /* MPAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MPAppDelegate.mm; sourceTree = "<group>"; };
 		5F21EA66184A1AE8005B6EE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		5F21EA68184A1AE8005B6EE7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5F21EA6E184A1AE8005B6EE7 /* KnobTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnobTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F21EA6F184A1AE8005B6EE7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5F21EA76184A1AE8005B6EE7 /* KnobTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KnobTests-Info.plist"; sourceTree = "<group>"; };
@@ -132,6 +133,11 @@
 		5F21EAC3184A2924005B6EE7 /* KGNoise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KGNoise.m; path = External/KGNoise/KGNoise.m; sourceTree = "<group>"; };
 		5F21EAC8184A2BF7005B6EE7 /* MPKnobWindowBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPKnobWindowBackgroundView.h; sourceTree = "<group>"; };
 		5F21EAC9184A2BF7005B6EE7 /* MPKnobWindowBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPKnobWindowBackgroundView.m; sourceTree = "<group>"; };
+		5F21EADB184A3813005B6EE7 /* knob-icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "knob-icon.icns"; sourceTree = "<group>"; };
+		5F21EADD184A3B68005B6EE7 /* MPMIDIListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPMIDIListener.h; sourceTree = "<group>"; };
+		5F21EADE184A3B68005B6EE7 /* MPMIDIListener.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MPMIDIListener.mm; sourceTree = "<group>"; };
+		5F21EAE0184A3B9A005B6EE7 /* MPLeapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLeapController.h; sourceTree = "<group>"; };
+		5F21EAE1184A3B9A005B6EE7 /* MPLeapController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MPLeapController.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +167,7 @@
 		5F21EA44184A1AE7005B6EE7 = {
 			isa = PBXGroup;
 			children = (
+				5F21EADB184A3813005B6EE7 /* knob-icon.icns */,
 				5F21EA96184A2053005B6EE7 /* External */,
 				5F21EA56184A1AE7005B6EE7 /* Knob */,
 				5F21EA74184A1AE8005B6EE7 /* KnobTests */,
@@ -203,6 +210,10 @@
 		5F21EA56184A1AE7005B6EE7 /* Knob */ = {
 			isa = PBXGroup;
 			children = (
+				5F21EAE0184A3B9A005B6EE7 /* MPLeapController.h */,
+				5F21EAE1184A3B9A005B6EE7 /* MPLeapController.mm */,
+				5F21EADD184A3B68005B6EE7 /* MPMIDIListener.h */,
+				5F21EADE184A3B68005B6EE7 /* MPMIDIListener.mm */,
 				5F21EA62184A1AE7005B6EE7 /* MPAppDelegate.h */,
 				5F21EA63184A1AE7005B6EE7 /* MPAppDelegate.mm */,
 				5F21EABF184A279F005B6EE7 /* MPKnobWindow.h */,
@@ -210,7 +221,6 @@
 				5F21EAC8184A2BF7005B6EE7 /* MPKnobWindowBackgroundView.h */,
 				5F21EAC9184A2BF7005B6EE7 /* MPKnobWindowBackgroundView.m */,
 				5F21EA65184A1AE8005B6EE7 /* MainMenu.xib */,
-				5F21EA68184A1AE8005B6EE7 /* Images.xcassets */,
 				5F21EA57184A1AE7005B6EE7 /* Supporting Files */,
 			);
 			path = Knob;
@@ -437,8 +447,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F21EADC184A3813005B6EE7 /* knob-icon.icns in Resources */,
 				5F21EA5B184A1AE7005B6EE7 /* InfoPlist.strings in Resources */,
-				5F21EA69184A1AE8005B6EE7 /* Images.xcassets in Resources */,
 				5F21EA61184A1AE7005B6EE7 /* Credits.rtf in Resources */,
 				5F21EA67184A1AE8005B6EE7 /* MainMenu.xib in Resources */,
 			);
@@ -460,6 +470,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F21EAA1184A20E8005B6EE7 /* NSAffineTransform+Rotation.m in Sources */,
+				5F21EADF184A3B68005B6EE7 /* MPMIDIListener.mm in Sources */,
 				5F21EAB4184A22D4005B6EE7 /* FingerNoteProgram.cpp in Sources */,
 				5F21EA95184A204F005B6EE7 /* LMXListener.cpp in Sources */,
 				5F21EA5D184A1AE7005B6EE7 /* main.m in Sources */,
@@ -469,6 +480,7 @@
 				5F21EACA184A2BF7005B6EE7 /* MPKnobWindowBackgroundView.m in Sources */,
 				5F21EAB2184A22D4005B6EE7 /* BallControlProgram.cpp in Sources */,
 				5F21EAA0184A20E8005B6EE7 /* BPOSliderCell.m in Sources */,
+				5F21EAE2184A3B9A005B6EE7 /* MPLeapController.mm in Sources */,
 				5F21EABC184A2333005B6EE7 /* Device.cpp in Sources */,
 				5F21EA64184A1AE7005B6EE7 /* MPAppDelegate.mm in Sources */,
 				5F21EA9F184A20E8005B6EE7 /* BPODial.m in Sources */,
