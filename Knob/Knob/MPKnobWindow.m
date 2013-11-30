@@ -25,7 +25,7 @@
                                   backing:bufferingType
                                     defer:flag])
     {
-        [self setAlphaValue:1.0];
+        [self setAlphaValue:0.95];
         [self setOpaque:NO];
         [self setExcludedFromWindowsMenu:NO];
     }

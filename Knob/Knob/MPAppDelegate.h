@@ -20,6 +20,9 @@
 @property (assign) IBOutlet BPODial *leftHandDial;
 @property (assign) IBOutlet BPODial *rightHandDial;
 
+@property (assign) IBOutlet NSPopUpButton *leftDialControlIndexPopup;
+@property (assign) IBOutlet NSPopUpButton *rightDialControlIndexPopup;
+
 - (IBAction)leftHandDialUpdated:(id)sender;
 - (IBAction)rightHandDialUpdated:(id)sender;
 

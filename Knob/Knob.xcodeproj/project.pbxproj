@@ -18,7 +18,7 @@
 		5F21EA79184A1AE8005B6EE7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F21EA77184A1AE8005B6EE7 /* InfoPlist.strings */; };
 		5F21EA7B184A1AE8005B6EE7 /* KnobTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F21EA7A184A1AE8005B6EE7 /* KnobTests.m */; };
 		5F21EA92184A1FE5005B6EE7 /* leapmidi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F21EA8D184A1FCB005B6EE7 /* leapmidi.a */; };
-		5F21EA95184A204F005B6EE7 /* LMXListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F21EA93184A204F005B6EE7 /* LMXListener.cpp */; };
+		5F21EA95184A204F005B6EE7 /* LMXListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5F21EA93184A204F005B6EE7 /* LMXListener.mm */; };
 		5F21EA9F184A20E8005B6EE7 /* BPODial.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F21EA98184A20E8005B6EE7 /* BPODial.m */; };
 		5F21EAA0184A20E8005B6EE7 /* BPOSliderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F21EA9A184A20E8005B6EE7 /* BPOSliderCell.m */; };
 		5F21EAA1184A20E8005B6EE7 /* NSAffineTransform+Rotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F21EA9C184A20E8005B6EE7 /* NSAffineTransform+Rotation.m */; };
@@ -103,8 +103,8 @@
 		5F21EA78184A1AE8005B6EE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5F21EA7A184A1AE8005B6EE7 /* KnobTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KnobTests.m; sourceTree = "<group>"; };
 		5F21EA87184A1FCB005B6EE7 /* leapmidi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = leapmidi.xcodeproj; path = ../../leapmidi/leapmidi.xcodeproj; sourceTree = "<group>"; };
-		5F21EA93184A204F005B6EE7 /* LMXListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LMXListener.cpp; path = ../LeapMIDIX/LMXListener.cpp; sourceTree = "<group>"; };
-		5F21EA94184A204F005B6EE7 /* LMXListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LMXListener.h; path = ../LeapMIDIX/LMXListener.h; sourceTree = "<group>"; };
+		5F21EA93184A204F005B6EE7 /* LMXListener.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LMXListener.mm; path = ../../LeapMIDIX/LMXListener.mm; sourceTree = "<group>"; };
+		5F21EA94184A204F005B6EE7 /* LMXListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LMXListener.h; path = ../../LeapMIDIX/LMXListener.h; sourceTree = "<group>"; };
 		5F21EA97184A20E8005B6EE7 /* BPODial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BPODial.h; path = External/BPODial/BPODial/BPODial/BPODial.h; sourceTree = "<group>"; };
 		5F21EA98184A20E8005B6EE7 /* BPODial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BPODial.m; path = External/BPODial/BPODial/BPODial/BPODial.m; sourceTree = "<group>"; };
 		5F21EA99184A20E8005B6EE7 /* BPOSliderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BPOSliderCell.h; path = External/BPODial/BPODial/BPODial/BPOSliderCell.h; sourceTree = "<group>"; };
@@ -210,6 +210,8 @@
 		5F21EA56184A1AE7005B6EE7 /* Knob */ = {
 			isa = PBXGroup;
 			children = (
+				5F21EA93184A204F005B6EE7 /* LMXListener.mm */,
+				5F21EA94184A204F005B6EE7 /* LMXListener.h */,
 				5F21EAE0184A3B9A005B6EE7 /* MPLeapController.h */,
 				5F21EAE1184A3B9A005B6EE7 /* MPLeapController.mm */,
 				5F21EADD184A3B68005B6EE7 /* MPMIDIListener.h */,
@@ -281,8 +283,6 @@
 			children = (
 				5F21EAB7184A22F9005B6EE7 /* visualizer */,
 				5F21EAB6184A22DA005B6EE7 /* program */,
-				5F21EA93184A204F005B6EE7 /* LMXListener.cpp */,
-				5F21EA94184A204F005B6EE7 /* LMXListener.h */,
 				5F21EABA184A2333005B6EE7 /* Device.cpp */,
 				5F21EABB184A2333005B6EE7 /* Device.h */,
 			);
@@ -472,7 +472,7 @@
 				5F21EAA1184A20E8005B6EE7 /* NSAffineTransform+Rotation.m in Sources */,
 				5F21EADF184A3B68005B6EE7 /* MPMIDIListener.mm in Sources */,
 				5F21EAB4184A22D4005B6EE7 /* FingerNoteProgram.cpp in Sources */,
-				5F21EA95184A204F005B6EE7 /* LMXListener.cpp in Sources */,
+				5F21EA95184A204F005B6EE7 /* LMXListener.mm in Sources */,
 				5F21EA5D184A1AE7005B6EE7 /* main.m in Sources */,
 				5F21EAC4184A2924005B6EE7 /* KGNoise.m in Sources */,
 				5F21EAB5184A22D4005B6EE7 /* MIDIProgram.cpp in Sources */,

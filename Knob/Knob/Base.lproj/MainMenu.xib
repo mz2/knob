@@ -646,15 +646,15 @@
                 </menuItem>
             </items>
         </menu>
-        <window title="Knob" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" appearanceType="lightContent" animationBehavior="default" id="371" customClass="MPKnobWindow">
+        <window title="Knob" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" appearanceType="lightContent" animationBehavior="default" id="371" customClass="MPKnobWindow">
             <windowStyleMask key="styleMask" closable="YES" miniaturizable="YES" resizable="YES" texturedBackground="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="829" y="46" width="600" height="280"/>
+            <rect key="contentRect" x="829" y="46" width="280" height="280"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
-            <value key="minSize" type="size" width="600" height="280"/>
-            <value key="maxSize" type="size" width="600" height="280"/>
+            <value key="minSize" type="size" width="280" height="280"/>
+            <value key="maxSize" type="size" width="280" height="280"/>
             <view key="contentView" focusRingType="none" id="372" customClass="MPKnobWindowBackgroundView">
-                <rect key="frame" x="0.0" y="0.0" width="600" height="280"/>
+                <rect key="frame" x="0.0" y="0.0" width="280" height="280"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <slider focusRingType="none" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h70-J6-FS4" customClass="BPODial">
@@ -665,42 +665,20 @@
                             <action selector="leftHandDialUpdated:" target="494" id="T1J-hh-YSG"/>
                         </connections>
                     </slider>
-                    <slider focusRingType="none" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gMB-W9-0LY" customClass="BPODial">
-                        <rect key="frame" x="482" y="105" width="18" height="20"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <sliderCell key="cell" controlSize="small" focusRingType="none" alignment="left" maxValue="128" doubleValue="50" tickMarkPosition="above" allowsTickMarkValuesOnly="YES" sliderType="circular" id="Sve-iW-Fuo" customClass="BPOSliderCell"/>
-                        <connections>
-                            <action selector="rightHandDialUpdated:" target="494" id="eFt-rM-qWe"/>
-                        </connections>
-                    </slider>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9as-m8-rCU">
-                        <rect key="frame" x="117" y="223" width="37" height="22"/>
+                        <rect key="frame" x="105" y="225" width="71" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Left" id="qQ2-Wr-1sl">
-                            <font key="font" size="18" name="LucidaGrande"/>
-                            <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oRz-yc-mRE">
-                        <rect key="frame" x="466" y="223" width="50" height="22"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Right" id="l6R-gj-3DU">
-                            <font key="font" size="18" name="LucidaGrande"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Knob™" id="qQ2-Wr-1sl">
+                            <font key="font" size="20" name="LucidaGrande"/>
                             <color key="textColor" name="disabledControlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="gMB-W9-0LY" secondAttribute="bottom" constant="32" id="2Bg-VR-cc1"/>
-                    <constraint firstItem="gMB-W9-0LY" firstAttribute="top" secondItem="h70-J6-FS4" secondAttribute="top" id="HWM-Km-K4U"/>
                     <constraint firstItem="9as-m8-rCU" firstAttribute="centerX" secondItem="h70-J6-FS4" secondAttribute="centerX" id="LKb-DR-cAS"/>
-                    <constraint firstItem="oRz-yc-mRE" firstAttribute="centerX" secondItem="gMB-W9-0LY" secondAttribute="centerX" id="MfJ-4h-ddl"/>
                     <constraint firstAttribute="bottom" secondItem="h70-J6-FS4" secondAttribute="bottom" constant="32" id="aaZ-hJ-COE"/>
                     <constraint firstItem="9as-m8-rCU" firstAttribute="top" secondItem="372" secondAttribute="top" constant="35" id="ePl-7u-uT5"/>
-                    <constraint firstItem="oRz-yc-mRE" firstAttribute="top" secondItem="372" secondAttribute="top" constant="35" id="f1x-lj-PAQ"/>
-                    <constraint firstAttribute="trailing" secondItem="gMB-W9-0LY" secondAttribute="trailing" constant="70" id="hAc-eA-75O"/>
                 </constraints>
                 <contentFilters>
                     <ciFilter name="CIGloom">
@@ -719,11 +697,11 @@
         <customObject id="494" customClass="MPAppDelegate">
             <connections>
                 <outlet property="leftHandDial" destination="h70-J6-FS4" id="MSb-2d-SJy"/>
-                <outlet property="rightHandDial" destination="gMB-W9-0LY" id="RAV-bh-zqV"/>
                 <outlet property="window" destination="371" id="532"/>
                 <outlet property="windowBackgroundView" destination="372" id="QwL-kr-6n5"/>
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
+        <userDefaultsController representsSharedInstance="YES" id="iQW-XE-aPA"/>
     </objects>
 </document>

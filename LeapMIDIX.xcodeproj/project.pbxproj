@@ -50,7 +50,7 @@
 		C3F81439166A08170039AB7E /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = C3F81438166A08170039AB7E /* main.mm */; };
 		C3F81443166A08780039AB7E /* Device.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3F81441166A08780039AB7E /* Device.cpp */; };
 		C3F81445166A08A10039AB7E /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F81444166A08A10039AB7E /* CoreMIDI.framework */; };
-		C3F81492166AC56E0039AB7E /* LMXListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C3F81490166AC56E0039AB7E /* LMXListener.cpp */; };
+		C3F81492166AC56E0039AB7E /* LMXListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = C3F81490166AC56E0039AB7E /* LMXListener.mm */; };
 		C3F81493166AC56E0039AB7E /* LMXListener.h in Headers */ = {isa = PBXBuildFile; fileRef = C3F81491166AC56E0039AB7E /* LMXListener.h */; };
 /* End PBXBuildFile section */
 
@@ -369,7 +369,7 @@
 		C3F81442166A08780039AB7E /* Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
 		C3F81444166A08A10039AB7E /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
 		C3F81446166A08B50039AB7E /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		C3F81490166AC56E0039AB7E /* LMXListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LMXListener.cpp; sourceTree = "<group>"; };
+		C3F81490166AC56E0039AB7E /* LMXListener.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LMXListener.mm; sourceTree = "<group>"; };
 		C3F81491166AC56E0039AB7E /* LMXListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMXListener.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -792,7 +792,7 @@
 				C361AA7316C3A6CC00771054 /* program */,
 				C3F81441166A08780039AB7E /* Device.cpp */,
 				C3F81442166A08780039AB7E /* Device.h */,
-				C3F81490166AC56E0039AB7E /* LMXListener.cpp */,
+				C3F81490166AC56E0039AB7E /* LMXListener.mm */,
 				C3F81491166AC56E0039AB7E /* LMXListener.h */,
 				C3F81438166A08170039AB7E /* main.mm */,
 				C35C783C166AAD2F00557211 /* Visualizer.cpp */,
@@ -916,7 +916,7 @@
 				C388245F166AB185007FE3B3 /* Visualizer.cpp in Sources */,
 				C3F81439166A08170039AB7E /* main.mm in Sources */,
 				C3F81443166A08780039AB7E /* Device.cpp in Sources */,
-				C3F81492166AC56E0039AB7E /* LMXListener.cpp in Sources */,
+				C3F81492166AC56E0039AB7E /* LMXListener.mm in Sources */,
 				C361AA7616C3A6CC00771054 /* FingerControlProgram.cpp in Sources */,
 				6014F90E16D0800B007B14EF /* FingerNoteProgram.cpp in Sources */,
 				C3A4E370175BC0DF006C8825 /* MIDIProgram.cpp in Sources */,

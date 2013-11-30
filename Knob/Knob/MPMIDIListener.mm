@@ -35,6 +35,8 @@ struct MPMIDIListenerImpl
         
         _listenerHandle->impl->init(_controller.controllerHandle->impl);
         _controller.controllerHandle->impl->addListener(*_listenerHandle->impl);
+        _controller.controllerHandle->impl->setPolicyFlags(Leap::Controller::PolicyFlag::POLICY_BACKGROUND_FRAMES);
+        _controller.controllerHandle->impl->enableGesture(Leap::Gesture::TYPE_SWIPE);
     }
     
     return self;

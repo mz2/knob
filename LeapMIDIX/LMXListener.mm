@@ -11,6 +11,8 @@
 
 #include "LMXListener.h"
 
+#import <Foundation/Foundation.h>
+
 namespace leapmidi {
     
 LMXListener::LMXListener() {
@@ -38,6 +40,7 @@ void LMXListener::init(Leap::Controller *controller) {
     // let the user choose the current active program.
     
     // create default program
+    //BallControlProgramPtr program = make_shared<BallControl>();
     FingerControlProgramPtr program = make_shared<FingerControl>();
     //    FingerNotePtr program = make_shared<FingerNote>();
 //    BallControlProgramPtr program = make_shared<BallControl>();
@@ -49,14 +52,20 @@ void LMXListener::init(Leap::Controller *controller) {
 }
 
 LMXListener::~LMXListener() {
+    
+#ifdef LMX_VISUALIZER_ENABLED
     if (viz)
         delete viz;
+#endif
     if (device)
         delete device;
 }
 
 void LMXListener::onGestureRecognized(const Leap::Controller &controller, GesturePtr gesture) {
     leapmidi::Listener::onGestureRecognized(controller, gesture);
+    
+    //[[NSNotificationCenter defaultCenter] postNotificationName:@"MPGestureRecognizerNotification"
+    //                                                    object:@{@"controller:" : [NSValue valueWithPointer:&controller]}];
 }
 
 void LMXListener::onControlUpdated(const Leap::Controller &controller, GesturePtr gesture, ControlPtr control) {
@@ -68,13 +77,22 @@ void LMXListener::onControlUpdated(const Leap::Controller &controller, GesturePt
     
     // control
     leapmidi::midi_control_index controlIndex = control->controlIndex();
+    
     // control value
     leapmidi::midi_control_value val = control->mappedValue();
     
     cout << "recognized control index " << controlIndex
-        << " (" << control->description() << ")"
-        << ", raw value: "
-        << control->rawValue() << " mapped value: " << val << endl;
+    << " (" << control->handIndex() << " " << control->description() << ")"
+    << ", raw value: "
+    << control->rawValue() << " mapped value: " << val << endl;
+    
+    
+    if (controlIndex != [[NSUserDefaults standardUserDefaults] integerForKey:@"leftControlIndex"]
+        &&
+        controlIndex != [[NSUserDefaults standardUserDefaults] integerForKey:@"rightControlIndex"])
+    {
+        return;
+    }
     
     bool multithreaded = true;
     
@@ -82,6 +100,12 @@ void LMXListener::onControlUpdated(const Leap::Controller &controller, GesturePt
         device->addControlMessage(controlIndex, val);
     else
         device->queueControlPacket(controlIndex, val);
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"MPControlMessageNotification"
+                                                        object:@{@"controller":[NSValue valueWithPointer:&controller],
+                                                                 @"handIndex":@(control->handIndex()),
+                                                                 //@"fingerIndex":@(control->fingerIndex()),
+                                                                 @"controlIndex":@(controlIndex), @"value":@(val)}];
 }
     
 void LMXListener::onNoteUpdated(const Leap::Controller &controller, GesturePtr gesture, NotePtr note) {
@@ -96,14 +120,16 @@ void LMXListener::onNoteUpdated(const Leap::Controller &controller, GesturePtr g
     // control value
     leapmidi::midi_note_value val = note->mappedValue();
     
-    if (1) {
-        cout << "recognized note index " << noteIndex
+    cout << "recognized note index " << noteIndex
         << " (" << note->description() << ")"
         << ", raw value: "
         << note->rawValue() << " mapped value: " << val << endl;
-    }
     
     device->addNoteMessage(noteIndex, val);
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"MPNoteMessageNotification"
+                                                        object:@{@"controller":[NSValue valueWithPointer:&controller],
+                                                                 @"index":@(noteIndex), @"value":@(val)}];
 }
 
 
